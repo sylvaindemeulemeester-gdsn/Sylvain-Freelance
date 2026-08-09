@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Consultant GDSN & Master Data | Sylvain Demeulemeester</title>
-<meta name="description" content="Consultant freelance expert GDSN, GS1 et Master Data. Audit, mise en conformité et optimisation des données produit pour industriels et distributeurs.">
+<title>Conseil Master Data, PIM, DAM & GDSN | Sylvain Demeulemeester</title>
+<meta name="description" content="Conseil Master Data, PIM, DAM, ERP et GDSN. J’accompagne industriels et PME dans la structuration, la qualité et la gestion de leurs données produit, de la source jusqu’aux distributeurs.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#0d1b2a;--teal:#1d9e75;--teal-light:#e1f5ee;--amber:#ef9f27;--amber-light:#faeeda;--gray-50:#f8f9fa;--gray-100:#f1efe8;--text-primary:#0d1b2a;--text-muted:#5f5e5a;}
@@ -55,6 +55,33 @@ section{padding:88px 48px;}
 .audit-banner h3{font-family:'Playfair Display',serif;font-size:26px;color:#fff;margin-bottom:8px;}
 .audit-banner p{font-size:14px;color:rgba(255,255,255,0.55);max-width:480px;line-height:1.7;}
 .audit-banner .btn-primary{flex-shrink:0;white-space:nowrap;padding:14px 28px;font-size:15px;}
+#offres{background:var(--gray-50);}
+.offer-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px;}
+.offer-card{background:#fff;border:1px solid #e8e6df;border-radius:16px;padding:30px 28px;position:relative;overflow:hidden;}
+.offer-card-main{border-top:4px solid var(--teal);}
+.offer-card-pme{border-top:4px solid var(--amber);}
+.offer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
+.offer-number{font-family:'Playfair Display',serif;font-size:28px;color:#d9d7d0;}
+.offer-kicker{font-size:10px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);}
+.amber-kicker{color:#b96d0b;}
+.offer-title{font-family:'Playfair Display',serif;font-size:25px;line-height:1.25;color:#0d1b2a;margin-bottom:12px;}
+.offer-intro{font-size:13px;color:var(--text-muted);line-height:1.8;margin-bottom:22px;}
+.offer-columns{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.offer-columns h4{font-size:12px;font-weight:600;color:#0d1b2a;margin-bottom:9px;text-transform:uppercase;letter-spacing:.6px;}
+.offer-list{list-style:none;}
+.offer-list li{font-size:12px;color:var(--text-muted);line-height:1.6;padding:5px 0 5px 15px;position:relative;}
+.offer-list li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:600;}
+.offer-card-pme .offer-list li::before{color:var(--amber);}
+.offer-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.7px;text-transform:uppercase;padding:5px 9px;border-radius:4px;margin-top:18px;}
+.teal-tag{background:var(--teal-light);color:#0f6e56;}
+.amber-tag{background:var(--amber-light);color:#633806;}
+.offer-highlight{background:var(--amber-light);border-left:3px solid var(--amber);padding:12px 14px;border-radius:0 7px 7px 0;margin-top:18px;font-size:12px;color:#633806;line-height:1.6;}
+.positioning-strip{background:var(--navy);border-radius:14px;padding:24px 26px;margin-top:22px;display:grid;grid-template-columns:1fr 1fr auto;gap:24px;align-items:center;}
+.positioning-strip div{display:flex;flex-direction:column;gap:4px;}
+.positioning-strip strong{font-size:13px;color:#fff;}
+.positioning-strip span{font-size:11px;color:rgba(255,255,255,.48);}
+.positioning-strip .btn-primary{white-space:nowrap;}
+
 #experience{background:#fff;}
 .exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px;}
 .exp-card{background:#fff;border:1px solid #e8e6df;border-radius:14px;padding:30px 26px;position:relative;overflow:hidden;}
@@ -95,21 +122,31 @@ section{padding:88px 48px;}
 .flow-sub{font-size:13px;color:var(--text-muted);margin-bottom:28px;}
 #problematiques{background:var(--navy);}
 #problematiques .section-title{color:#fff;}
-#problematiques .section-sub{color:rgba(255,255,255,0.5);}
+#problematiques .section-sub{color:rgba(255,255,255,0.68);}
 .prob-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px;}
 .prob-card{border-radius:14px;padding:30px 26px;}
-.prob-eu{background:rgba(29,158,117,0.1);border:1px solid rgba(29,158,117,0.22);}
-.prob-fr{background:rgba(239,159,39,0.08);border:1px solid rgba(239,159,39,0.22);}
+.prob-eu{background:#102f2a;border:1px solid rgba(93,202,165,0.42);}
+.prob-fr{background:#342515;border:1px solid rgba(239,159,39,0.48);}
 .prob-badge{font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px;display:block;}
-.prob-eu .prob-badge{color:var(--teal);}
-.prob-fr .prob-badge{color:var(--amber);}
+.prob-eu .prob-badge{color:#72d8b5;}
+.prob-fr .prob-badge{color:#ffc36a;}
 .prob-title{font-family:'Playfair Display',serif;font-size:20px;color:#fff;margin-bottom:12px;line-height:1.35;}
-.prob-text{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.8;}
+.prob-text{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.8;}
 .prob-list{margin-top:12px;list-style:none;}
-.prob-list li{font-size:12px;color:rgba(255,255,255,0.5);padding:4px 0;display:flex;gap:7px;}
-.prob-eu .prob-list li::before{content:'•';color:var(--teal);flex-shrink:0;}
-.prob-fr .prob-list li::before{content:'•';color:var(--amber);flex-shrink:0;}
+.prob-list li{font-size:12px;color:rgba(255,255,255,0.72);padding:5px 0;display:flex;gap:7px;line-height:1.5;}
+.prob-eu .prob-list li::before{content:'•';color:#72d8b5;flex-shrink:0;}
+.prob-fr .prob-list li::before{content:'•';color:#ffc36a;flex-shrink:0;}
 #contact{background:#fff;}
+.contact-simple{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center;margin-top:44px;}
+.contact-simple-intro p{font-size:14px;color:var(--text-muted);line-height:1.85;margin-bottom:18px;max-width:600px;}
+.contact-direct-large{padding:24px;background:var(--gray-50);border:1px solid #e8e6df;border-radius:14px;margin-top:0;}
+.contact-method{display:flex;align-items:center;gap:13px;padding:12px 0;}
+.contact-method + .contact-method{border-top:1px solid #e8e6df;}
+.contact-method p{font-size:11px;color:var(--text-muted);margin:0 0 3px;text-transform:uppercase;letter-spacing:.7px;}
+.contact-method a{color:var(--teal);text-decoration:none;font-size:14px;font-weight:500;}
+.contact-method a:hover{text-decoration:underline;}
+
+
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start;margin-top:44px;}
 .contact-info p{font-size:14px;color:var(--text-muted);line-height:1.85;margin-bottom:22px;}
 .contact-links{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
@@ -135,8 +172,10 @@ footer{background:var(--navy);padding:28px 48px;display:flex;align-items:center;
 .footer-logo{font-family:'Playfair Display',serif;color:#fff;font-size:15px;}
 .footer-text{font-size:12px;color:rgba(255,255,255,0.35);}
 @media(max-width:900px){
-  .hero-grid,.exp-grid,.services-grid,.prob-grid,.contact-grid{grid-template-columns:1fr;}
+  .hero-grid,.exp-grid,.services-grid,.prob-grid,.contact-grid,.offer-grid,.contact-simple{grid-template-columns:1fr;}
   .ecosystem-grid{grid-template-columns:1fr 1fr;}
+  .offer-columns{grid-template-columns:1fr;}
+  .positioning-strip{grid-template-columns:1fr;}
   .hero-name{font-size:40px;}
   nav{padding:0 20px;}
   section{padding:60px 20px;}
@@ -150,10 +189,10 @@ footer{background:var(--navy);padding:28px 48px;display:flex;align-items:center;
 <nav>
   <div class="nav-logo">SD — Master Data</div>
   <div class="nav-links">
-    <a href="#services">Services</a>
+    <a href="#offres">Mes offres</a>
     <a href="#experience">Expérience</a>
-    <a href="#gdsn">Notebook GDSN</a>
-    <a href="#problematiques">Problématiques</a>
+    <a href="#ecosysteme">Écosystème</a>
+    <a href="#enjeux">Enjeux</a>
     <a href="#contact">Contact</a>
   </div>
   <a href="#contact" class="nav-cta">Réserver un échange</a>
@@ -163,25 +202,25 @@ footer{background:var(--navy);padding:28px 48px;display:flex;align-items:center;
   <div class="hero-bg"></div>
   <div class="hero-grid">
     <div>
-      <div class="hero-eyebrow">Consultant GDSN & Master Data</div>
+      <div class="hero-eyebrow">Conseil Master Data · Données produit · GDSN</div>
       <h1 class="hero-name">Sylvain<br>Demeulemeester</h1>
       <p class="hero-title">Master Data Lead · Unilever</p>
-      <p class="hero-desc">J'aide les industriels et distributeurs à fiabiliser leurs données produit et réussir leur intégration GDSN. Audit, mise en conformité GS1 et optimisation des flux Master Data.</p>
+      <p class="hero-desc">J’aide les entreprises à reprendre le contrôle de leurs données produit : stratégie Master Data, PIM, DAM, ERP, qualité, standards GS1 et GDSN. Du cadrage stratégique à la gestion opérationnelle des données.</p>
       <div class="hero-audit">
         <div class="hero-audit-icon">⚡</div>
-        <p><strong>Audit gratuit de 30 minutes</strong><br>Diagnostic de votre situation GDSN & qualité de données</p>
+        <p><strong>Diagnostic découverte de 30 minutes</strong><br>Un premier échange pour comprendre votre situation, vos irritants et vos priorités.</p>
       </div>
       <div class="hero-tags">
-        <span class="hero-tag">GDSN / GS1</span>
-        <span class="hero-tag">SAP ERP</span>
-        <span class="hero-tag">PIM</span>
-        <span class="hero-tag">Data Governance</span>
         <span class="hero-tag">Master Data</span>
+        <span class="hero-tag">PIM / DAM</span>
+        <span class="hero-tag">ERP / SAP</span>
+        <span class="hero-tag">GS1 / GDSN</span>
         <span class="hero-tag">Data Quality</span>
+        <span class="hero-tag">Data Governance</span>
       </div>
       <div class="hero-cta">
-        <a href="#contact" class="btn-primary">Réserver un échange</a>
-        <a href="#gdsn" class="btn-outline">Notebook GDSN</a>
+        <a href="#offres" class="btn-primary">Découvrir les offres</a>
+        <a href="#ecosysteme" class="btn-outline">Voir l’écosystème</a>
       </div>
     </div>
     <div class="hero-stats">
@@ -205,44 +244,95 @@ footer{background:var(--navy);padding:28px 48px;display:flex;align-items:center;
   </div>
 </div>
 
-<section id="services">
+<section id="offres">
   <div class="section-inner">
-    <div class="section-label">Ce que je propose</div>
-    <h2 class="section-title">Mes services</h2>
+    <div class="section-label">Deux façons de travailler ensemble</div>
+    <h2 class="section-title">Une expertise, deux offres claires</h2>
     <div class="section-divider"></div>
-    <p class="section-sub">Des missions ciblées pour fiabiliser vos données produit, réussir votre intégration GDSN et structurer votre gouvernance Master Data.</p>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon" style="background:#e6f1fb;">🔍</div>
-        <div class="service-title">Audit GDSN & qualité de données</div>
-        <div class="service-desc">Évaluation complète de votre taux de complétude GDSN, identification des attributs manquants ou non conformes aux standards GS1, et plan de remédiation priorisé.</div>
-        <span class="service-tag" style="background:#e6f1fb;color:#185fa5;">Diagnostic · Roadmap</span>
-      </div>
-      <div class="service-card">
-        <div class="service-icon" style="background:#e1f5ee;">📦</div>
-        <div class="service-title">Implémentation PIM & Data Flow</div>
-        <div class="service-desc">Accompagnement à la mise en place d'un PIM (<a href="https://www.akeneo.com/fr/" target="_blank" style="color:var(--teal);">Akeneo</a>, <a href="https://www.salsify.com/" target="_blank" style="color:var(--teal);">Salsify</a>, <a href="https://www.equadis.com/" target="_blank" style="color:var(--teal);">Equadis</a>), cartographie des flux de données entre ERP, PIM, DAM et data pool, et automatisation des échanges.</div>
-        <span class="service-tag" style="background:#e1f5ee;color:#0f6e56;">Akeneo · Salsify · SAP</span>
-      </div>
-      <div class="service-card">
-        <div class="service-icon" style="background:#faeeda;">✅</div>
-        <div class="service-title">Mise en conformité GS1</div>
-        <div class="service-desc">Vérification et correction des GTIN, GLN, données logistiques et nutritionnelles selon les derniers standards GS1. Préparation à la certification data pool.</div>
-        <span class="service-tag" style="background:#faeeda;color:#633806;">GS1 · GTIN · GLN</span>
-      </div>
-      <div class="service-card">
-        <div class="service-icon" style="background:#eeedfe;">⚙️</div>
-        <div class="service-title">Amélioration des processus Master Data</div>
-        <div class="service-desc">Refonte des processus de création et maintenance des fiches articles, formation des équipes aux bonnes pratiques, mise en place de KPIs et de gouvernance data.</div>
-        <span class="service-tag" style="background:#eeedfe;color:#3c3489;">Process · Formation · KPIs</span>
-      </div>
+    <p class="section-sub">Je distingue le conseil spécialisé sur votre écosystème Data Produit de l’accompagnement opérationnel des PME qui ont besoin de gérer leurs données produit de bout en bout.</p>
+
+    <div class="offer-grid">
+      <article class="offer-card offer-card-main">
+        <div class="offer-top">
+          <span class="offer-number">01</span>
+          <span class="offer-kicker">Conseil & expertise</span>
+        </div>
+        <h3 class="offer-title">Conseil Master Data, PIM, DAM & GDSN</h3>
+        <p class="offer-intro">Pour les entreprises qui ont déjà des équipes, des outils ou une architecture et qui cherchent un regard expert pour structurer, fiabiliser ou faire évoluer leur environnement de données produit.</p>
+        <div class="offer-columns">
+          <div>
+            <h4>J’interviens sur</h4>
+            <ul class="offer-list">
+              <li>Audit de l’écosystème Master Data et de la qualité des données</li>
+              <li>Architecture et flux ERP · PIM · DAM · PLM · GDSN</li>
+              <li>Choix, cadrage ou évolution d’un PIM / DAM / data pool</li>
+              <li>Gouvernance, rôles, processus et règles de qualité</li>
+              <li>Standards GS1, GDSN, GTIN, GLN, GPC et données produit</li>
+              <li>Diagnostic des interfaces, flux et points de rupture</li>
+              <li>Roadmap de transformation et accompagnement au changement</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Livrables possibles</h4>
+            <ul class="offer-list">
+              <li>Diagnostic et cartographie de l’existant</li>
+              <li>Architecture cible et cartographie des flux</li>
+              <li>Modèle de gouvernance et RACI</li>
+              <li>Plan d’amélioration de la Data Quality</li>
+              <li>Roadmap priorisée et recommandations outils</li>
+              <li>Accompagnement des équipes et transfert de compétences</li>
+            </ul>
+          </div>
+        </div>
+        <span class="offer-tag teal-tag">Stratégie · Architecture · Gouvernance · GS1 · GDSN</span>
+      </article>
+
+      <article class="offer-card offer-card-pme">
+        <div class="offer-top">
+          <span class="offer-number">02</span>
+          <span class="offer-kicker amber-kicker">Accompagnement PME</span>
+        </div>
+        <h3 class="offer-title">Gestion des données produit de A à Z</h3>
+        <p class="offer-intro">Pour les PME qui doivent produire, structurer, enrichir et maintenir leurs données produit sans disposer d’une équipe Master Data dédiée. Je peux prendre en charge le sujet avec vous, de la collecte jusqu’à la diffusion.</p>
+        <div class="offer-columns">
+          <div>
+            <h4>De la donnée brute à la donnée prête</h4>
+            <ul class="offer-list">
+              <li>Inventaire et récupération des informations existantes</li>
+              <li>Structuration du référentiel produit et des attributs</li>
+              <li>Création / contrôle des identifiants et données GS1</li>
+              <li>Collecte des données techniques, logistiques, marketing et réglementaires</li>
+              <li>Enrichissement, normalisation, traduction et contrôle</li>
+              <li>Gestion des images et autres assets produit</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Jusqu’à la diffusion</h4>
+            <ul class="offer-list">
+              <li>Préparation des données pour PIM, ERP ou autres référentiels</li>
+              <li>Préparation et publication GDSN via un data pool certifié</li>
+              <li>Réponse aux exigences des distributeurs et marketplaces</li>
+              <li>Contrôle des rejets, erreurs et demandes de correction</li>
+              <li>Mise à jour des produits et gestion du cycle de vie</li>
+              <li>Suivi de la qualité et maintenance dans la durée</li>
+            </ul>
+          </div>
+        </div>
+        <div class="offer-highlight"><strong>Objectif :</strong> vous permettre de disposer de données produit fiables, complètes et exploitables sans devoir construire immédiatement une équipe Master Data en interne.</div>
+        <span class="offer-tag amber-tag">Collecte · Enrichissement · Qualité · GDSN · Maintenance</span>
+      </article>
     </div>
-    <div class="audit-banner">
+
+    <div class="positioning-strip">
       <div>
-        <h3>Audit gratuit de 30 minutes</h3>
-        <p>Vous avez une problématique GDSN, un taux de complétion insuffisant ou un projet de mise en conformité GS1 ? Échangeons gratuitement pour évaluer votre situation et identifier les priorités.</p>
+        <strong>Besoin d’un avis expert sur votre organisation ?</strong>
+        <span>Offre 01 — conseil et structuration.</span>
       </div>
-      <a href="#contact" class="btn-primary">Réserver maintenant</a>
+      <div>
+        <strong>Besoin que quelqu’un fasse avancer vos données produit ?</strong>
+        <span>Offre 02 — accompagnement opérationnel PME.</span>
+      </div>
+      <a href="#contact" class="btn-primary">Échanger sur votre besoin</a>
     </div>
   </div>
 </section>
@@ -290,12 +380,12 @@ footer{background:var(--navy);padding:28px 48px;display:flex;align-items:center;
   </div>
 </section>
 
-<section id="gdsn">
+<section id="ecosysteme">
   <div class="section-inner">
-    <div class="section-label">Notebook GDSN</div>
-    <h2 class="section-title">Comprendre l'écosystème<br>de la donnée produit</h2>
+    <div class="section-label">Écosystème de la donnée produit</div>
+    <h2 class="section-title">Comprendre l’écosystème<br>de la donnée produit</h2>
     <div class="section-divider"></div>
-    <p class="section-sub">De l'ERP au réseau GDSN, les grands blocs de l'architecture Master Data et comment ils interagissent pour garantir la qualité et la synchronisation des données produit.</p>
+    <p class="section-sub">ERP, PIM, DAM, PLM, flux et GDSN : les briques qui composent une chaîne de données produit et les responsabilités de chacune. <a href="https://www.gs1.org/services/gdsn" target="_blank" style="color:var(--teal);">Voir la référence GS1 sur le GDSN →</a></p>
     <div class="ecosystem-grid">
       <div class="eco-card" onclick="openTab('erp')">
         <div class="eco-icon" style="background:#e6f1fb;">🏗️</div>
@@ -408,7 +498,7 @@ footer{background:var(--navy);padding:28px 48px;display:flex;align-items:center;
     <div class="nb-content" id="content-dataflow">
       <h3>Data Flow — Architecture des flux de données</h3>
       <p>Le Data Flow décrit comment les données transitent entre les différents systèmes. Les flux doivent être automatisés, traçables et réversibles pour garantir la cohérence en temps réel.</p>
-      <div class="hl-teal"><p>Flux type chez un industriel FMCG : SAP ERP → PIM → Data Pool GDSN → Distributeurs. En parallèle : PLM → ERP lors du lancement produit.</p></div>
+      <div class="hl-teal"><p>Exemple de flux : PLM → ERP → PIM → Data Pool GDSN → partenaires commerciaux. L’architecture réelle dépend du modèle de données, des responsabilités et des outils de chaque entreprise.</p></div>
       <ul>
         <li>Flux entrant : données R&D du PLM vers l'ERP (création article)</li>
         <li>Flux enrichissement : ERP → PIM (données de base + données marketing)</li>
@@ -420,19 +510,19 @@ footer{background:var(--navy);padding:28px 48px;display:flex;align-items:center;
     <div class="nb-content" id="content-datapool">
       <h3>Data Pool & GDSN — Le réseau mondial</h3>
       <p>Le Global Data Synchronization Network (GDSN) est un réseau d'échange standardisé de données produit. Il permet à tout industriel de publier ses données et à tout distributeur de les recevoir automatiquement selon les standards GS1.</p>
-      <div class="hl-teal"><p>En 2025, le réseau GDSN couvre plus de 100 millions d'articles via les data pools certifiés GS1 dans le monde.</p></div>
+      <div class="hl-teal"><p>Le GDSN repose sur un réseau de data pools certifiés GS1 et le GS1 Global Registry pour permettre la synchronisation continue des données entre partenaires.</p></div>
       <ul>
         <li>Publication via un data pool certifié GS1 : <a href="https://www.equadis.com/" target="_blank" style="color:var(--teal);">Equadis</a>, <a href="https://www.agena3000.com/" target="_blank" style="color:var(--teal);">Agena3000</a>, <a href="https://1worldsync.com/" target="_blank" style="color:var(--teal);">1WorldSync</a></li>
         <li>Le <a href="https://www.gs1.org/services/gdsn" target="_blank" style="color:var(--teal);">GS1 Global Registry</a> sert d'annuaire central et valide les échanges</li>
         <li><strong>Eureca</strong> — plateforme collaborative côté distributeurs européens, connectée au réseau GDSN en réception des données</li>
-        <li>Validation automatique contre +500 règles qualité GS1</li>
+        <li>Contrôles de conformité et de qualité selon les règles applicables</li>
         <li>Synchronisation automatique en cas de mise à jour produit</li>
         <li>Protocole de communication : messages XML standardisés (GS1 XML / EANCOM)</li>
       </ul>
     </div>
     <div class="flow-diagram">
       <div class="flow-label">Architecture globale du flux Master Data</div>
-      <div class="flow-sub">Du cycle de vie produit à la synchronisation GDSN chez les distributeurs et plateformes de partage européennes</div>
+      <div class="flow-sub">Exemple d’architecture : du cycle de vie produit à la diffusion des données chez les partenaires</div>
       <svg width="100%" viewBox="0 0 1100 310" role="img">
         <title>Flux Master Data avec Data Pools et plateformes distributeurs</title>
         <desc>PLM → ERP → PIM → Data Pool (Equadis / Agena3000) → GDSN → Retailers (Carrefour, Leclerc, Système U, Eureca)</desc>
@@ -559,34 +649,34 @@ footer{background:var(--navy);padding:28px 48px;display:flex;align-items:center;
   </div>
 </section>
 
-<section id="problematiques">
+<section id="enjeux">
   <div class="section-inner">
-    <div class="section-label" style="color:var(--teal);">Cas d'usage & Défis</div>
-    <h2 class="section-title">Problématiques terrain</h2>
+    <div class="section-label" style="color:var(--teal);">Enjeux actuels de la donnée produit</div>
+    <h2 class="section-title">Les sujets qui font avancer la donnée produit</h2>
     <div class="section-divider"></div>
-    <p class="section-sub">Deux problématiques concrètes rencontrées dans la gestion de la donnée produit : l'une à l'échelle européenne, l'autre spécifique au marché francophone.</p>
+    <p class="section-sub">Les difficultés ne sont pas uniquement techniques : qualité, disponibilité de l’information, standards, réglementation, organisation et diffusion sont étroitement liés.</p>
     <div class="prob-grid">
       <div class="prob-card prob-eu">
-        <span class="prob-badge">Problématique européenne</span>
-        <h3 class="prob-title">Harmonisation des données produit dans le cadre du Règlement PPWR</h3>
-        <p class="prob-text">Le Packaging and Packaging Waste Regulation (PPWR) européen impose aux industriels de fournir des données précises sur la recyclabilité et la composition des emballages. Or, les systèmes GDSN actuels manquent d'attributs standardisés suffisants pour couvrir toutes ces exigences.</p>
+        <span class="prob-badge">Réglementation & standards</span>
+        <h3 class="prob-title">Anticiper les nouvelles exigences sur les produits et emballages</h3>
+        <p class="prob-text">Les entreprises doivent faire évoluer leurs référentiels pour répondre aux nouvelles exigences européennes et aux évolutions des standards. Le sujet devient un enjeu d’architecture et de gouvernance autant qu’un sujet de conformité.</p>
         <ul class="prob-list">
-          <li>Les attributs GDSN GS1 liés au packaging doivent être étendus pour PPWR</li>
-          <li>Multiplicité des formats selon les États membres (FR, DE, IT...)</li>
-          <li>Nécessité de synchroniser ces données en temps réel avec les distributeurs</li>
-          <li>Challenge d'intégration dans les ERP/PIM existants sans refonte complète</li>
+          <li>Évolution des données liées aux emballages et à leur composition</li>
+          <li>Émergence de besoins autour du Digital Product Passport</li>
+          <li>Alignement entre données réglementaires, produit et systèmes existants</li>
+          <li>Capacité à faire évoluer le modèle de données sans multiplier les fichiers parallèles</li>
         </ul>
       </div>
       <div class="prob-card prob-fr">
-        <span class="prob-badge">Problématique francophone</span>
-        <h3 class="prob-title">Taux de complétion des données GDSN chez les PME fournisseurs français</h3>
-        <p class="prob-text">En France, les grandes enseignes exigent un score de complétude GDSN élevé pour référencer un produit. Or, les PME et ETI françaises peinent à atteindre ces niveaux, freinant leur référencement.</p>
+        <span class="prob-badge">PME & qualité de donnée</span>
+        <h3 class="prob-title">Passer d’Excel dispersés à une vraie gestion produit</h3>
+        <p class="prob-text">Pour une PME, la difficulté est souvent moins de choisir un outil que de réunir l’information, définir qui en est responsable, la rendre fiable et la maintenir dans le temps.</p>
         <ul class="prob-list">
-          <li>Manque de ressources dédiées Master Data dans les PME</li>
-          <li>Méconnaissance des standards GS1 et des exigences des data pools</li>
-          <li>Données nutritionnelles et allergènes souvent incomplètes</li>
-          <li>Absence de PIM : données gérées dans des fichiers Excel non structurés</li>
-          <li>Coût estimé des non-conformités : 3 à 7% du CA en litiges logistiques</li>
+          <li>Informations réparties entre Excel, ERP, dossiers partagés et équipes</li>
+          <li>Responsabilités peu claires sur la création et la mise à jour</li>
+          <li>Données techniques, logistiques, marketing ou réglementaires incomplètes</li>
+          <li>Exigences GS1, GDSN et distributeurs difficiles à interpréter</li>
+          <li>Manque de temps pour maintenir les données après le premier référencement</li>
         </ul>
       </div>
     </div>
@@ -596,50 +686,28 @@ footer{background:var(--navy);padding:28px 48px;display:flex;align-items:center;
 <section id="contact">
   <div class="section-inner">
     <div class="section-label">Contact</div>
-    <h2 class="section-title">Parlons GDSN<br>& Master Data</h2>
+    <h2 class="section-title">Parlons de vos<br>données produit</h2>
     <div class="section-divider"></div>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p>Vous avez un projet de mise en place GDSN, une problématique de qualité de la donnée produit, ou souhaitez profiter de l'audit gratuit de 30 minutes ? Je suis disponible pour en discuter.</p>
-        <p>Basé en France, j'interviens sur des projets français et européens, avec une forte expertise dans les secteurs FMCG et Cosmétique (Food, Home Care, Personal Care).</p>
-        <div class="contact-links">
-          <a href="https://www.linkedin.com/in/sylvain-demeulemeester-masterdata-lead" class="contact-link" target="_blank">
-            <div class="contact-link-icon">💼</div>
-            <span>LinkedIn — Sylvain Demeulemeester</span>
-          </a>
-          <div class="contact-link">
-            <div class="contact-link-icon">🌍</div>
-            <span>Disponible pour des missions France & Europe</span>
-          </div>
-          <div class="contact-link">
-            <div class="contact-link-icon">📊</div>
-            <span>Expert GS1 GDSN · Master Data · PIM · ERP SAP</span>
-          </div>
-        </div>
-        <div class="contact-direct">
-          <p>Email direct</p>
-          <a href="mailto:sylvaind.freelance@gmail.com">sylvaind.freelance@gmail.com</a>
-        </div>
+    <div class="contact-simple">
+      <div class="contact-simple-intro">
+        <p>Vous avez un projet de structuration des données produit, une problématique GDSN, PIM, DAM ou Master Data ? Échangeons directement pour comprendre votre besoin et voir comment je peux vous accompagner.</p>
+        <p>J’interviens sur des projets français et européens, avec une forte expertise dans les secteurs FMCG et Cosmétique.</p>
       </div>
-      <div class="contact-form">
-        <div class="form-group">
-          <label class="form-label">Nom & Prénom</label>
-          <input class="form-input" type="text" id="f-name" placeholder="Jean Dupont">
+      <div class="contact-direct contact-direct-large">
+        <div class="contact-method">
+          <div class="contact-link-icon">✉️</div>
+          <div>
+            <p>Email</p>
+            <a href="mailto:sylvaind.freelance@gmail.com">sylvaind.freelance@gmail.com</a>
+          </div>
         </div>
-        <div class="form-group">
-          <label class="form-label">Email professionnel</label>
-          <input class="form-input" type="email" id="f-email" placeholder="jean@entreprise.com">
+        <div class="contact-method">
+          <div class="contact-link-icon">💼</div>
+          <div>
+            <p>LinkedIn</p>
+            <a href="https://www.linkedin.com/in/sylvain-demeulemeester-masterdata-lead" target="_blank">Sylvain Demeulemeester</a>
+          </div>
         </div>
-        <div class="form-group">
-          <label class="form-label">Sujet</label>
-          <input class="form-input" type="text" id="f-subject" placeholder="Projet GDSN, audit, formation...">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Votre message</label>
-          <textarea class="form-textarea" id="f-message" placeholder="Décrivez votre projet ou votre question..."></textarea>
-        </div>
-        <button class="form-btn" id="send-btn" onclick="sendMail()">Envoyer le message</button>
-        <p class="form-note">Cliquer ouvre votre client mail avec le message pré-rempli.<br>Ou contactez-moi directement sur <a href="https://www.linkedin.com/in/sylvain-demeulemeester-masterdata-lead" target="_blank">LinkedIn</a>.</p>
       </div>
     </div>
   </div>
@@ -647,7 +715,7 @@ footer{background:var(--navy);padding:28px 48px;display:flex;align-items:center;
 
 <footer>
   <div class="footer-logo">Sylvain Demeulemeester</div>
-  <div class="footer-text">Consultant GDSN & Master Data · Expert GS1 · Paris, France</div>
+  <div class="footer-text">Conseil Master Data · PIM · DAM · GS1 / GDSN · France & Europe</div>
 </footer>
 
 <script>
